@@ -17,4 +17,4 @@ cp .env.example .env.local
 npm run dev
 
 ## Screenshots
-![Next.js Dashboard Mockup](/home/webexpert/.gemini/antigravity/brain/94733f02-21c4-4c45-bb66-e8147f7f6fc9/nextjs_dashboard_screenshot_1771663476922.png)
+![Next.js Dashboard Mockup](https://files.catbox.moe/refq1a.png)
