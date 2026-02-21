@@ -30,11 +30,11 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
     }
 
     return (
-        <div className="flex bg-gray-50 min-h-screen">
+        <div className="flex bg-gray-50 h-screen overflow-hidden">
             <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
-            <div className="flex flex-1 flex-col overflow-hidden">
+            <div className="flex flex-1 flex-col min-w-0 overflow-hidden">
                 <Header onMenuClick={() => setSidebarOpen(true)} />
-                <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
+                <main className="flex-1 flex flex-col px-4 sm:px-6 lg:px-12 py-8 bg-[#fafafa]/50 overflow-hidden">
                     {children}
                 </main>
             </div>

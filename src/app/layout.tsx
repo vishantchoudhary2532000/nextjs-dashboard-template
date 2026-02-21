@@ -1,28 +1,20 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Admin Dashboard Template",
-  description: "A production-ready dashboard template built with Next.js App Router, Tailwind CSS, and Typescript.",
-  keywords: ["Next.js", "Dashboard", "Template", "React", "Admin Panel"],
-  authors: [{ name: "Web Expert" }],
-  openGraph: {
-    title: "Next.js Admin Dashboard Template",
-    description: "A secure, responsive dashboard frontend template.",
-    type: "website",
-  }
+  title: "NovaAdmin | Enterprise Insights Platform",
+  description: "Next-generation analytics dashboard for high-performance teams.",
 };
 
 export default function RootLayout({
@@ -33,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${outfit.variable} antialiased font-sans`}
       >
         {children}
       </body>

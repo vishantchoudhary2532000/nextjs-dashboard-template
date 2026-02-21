@@ -110,18 +110,18 @@ export default function UsersPage() {
                                         {new Date(user.lastLogin).toLocaleDateString()}
                                     </TableCell>
                                     <TableCell className="text-right space-x-2">
-                                        <Button variant="ghost" size="sm" className="h-8 w-8 p-0" onClick={() => { }}>
+                                        <Button variant="ghost" size="sm" className="h-10 w-10 p-0 hover:bg-indigo-50 transition-all active:scale-95" onClick={() => { }}>
                                             <span className="sr-only">Edit</span>
-                                            <UserCheck className="h-4 w-4 text-gray-500" />
+                                            <UserCheck className="h-5 w-5 text-gray-500" />
                                         </Button>
                                         <Button
                                             variant="ghost"
                                             size="sm"
-                                            className="h-8 w-8 p-0 text-red-600 hover:text-red-700 hover:bg-red-50"
+                                            className="h-10 w-10 p-0 text-red-600 hover:text-red-700 hover:bg-red-50 transition-all active:scale-95"
                                             onClick={() => { setUserToDelete(user.id); setDeleteModalOpen(true); }}
                                         >
                                             <span className="sr-only">Delete</span>
-                                            <Trash2 className="h-4 w-4" />
+                                            <Trash2 className="h-5 w-5" />
                                         </Button>
                                     </TableCell>
                                 </TableRow>
