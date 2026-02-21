@@ -17,4 +17,12 @@ cp .env.example .env.local
 npm run dev
 
 ## Screenshots
-![Next.js Dashboard Mockup](https://files.catbox.moe/refq1a.png)
+
+### Login Page
+![Login Page](/screenshots/login.png)
+
+### Dashboard
+![Dashboard](/screenshots/dashboard.png)
+
+### Users Management
+![Users Management](/screenshots/users.png)
